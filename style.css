@@ -67,12 +67,16 @@ a:active {
 }
 .footer {
   width: 100%;
-  margin-top: 20px;
 }
-.sample {
-  width: 200px;
-  height: 200px;
-  margin-left: 20px;
-  background: pink;
-  box-shadow: inset 0 0 10px 30px brown;
+
+.logo {
+  width: 225px;
+  height: 56px;
+  margin: 0 auto;
+  background: url(mcoding/standard-layout/images/logo.png) no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  
+
 }
