@@ -322,6 +322,18 @@ a:active {
 .ranking .ranking-item:nth-of-type(3) .order {
   background-color: #a0541a;
 }
+.ranking .ranking-item:nth-of-type(4) .order {
+  background-color: #fff;
+  color: #ccc;
+}
+.ranking .ranking-item:nth-of-type(5) .order {
+  background-color: #fff;
+  color: #ccc;
+}
+.ranking .ranking-item:nth-of-type(6) .order {
+  background-color: #fff;
+  color: #ccc;
+}
 .ranking .order::before {
   content: counter(ranking);
   counter-increment: ranking;
