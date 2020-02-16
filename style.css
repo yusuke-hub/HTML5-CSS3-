@@ -268,6 +268,7 @@ a:active {
   counter-reset: ranking;
 }
 .ranking .ranking-item {
+  position: relative;
   margin-top: 15px;
 }
 .ranking .ranking-item a {
@@ -287,22 +288,22 @@ a:active {
   width: 182px;
   color: #000;
   vertical-align: top;
+  margin-left: 18px;
   font-size: 1.2rem;
   line-height: 1.5;
 }
 .ranking .order {
+  position: absolute;
+  left: 46px;
+  top: -9px;
+  border-radius: 18px;
   display: inline-block;
   width: 18px;
   height: 18px;
-  margin: 0 10px;
   border: 1px solid #ccc;
-  vertical-align: 20px;
   text-align: center;
   font-weight: bold;
   line-height: 16px;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
 }
 .ranking .ranking-item:nth-of-type(1) .order,
 .ranking .ranking-item:nth-of-type(2) .order,
@@ -326,7 +327,93 @@ a:active {
   counter-increment: ranking;
   display: inline-block;
   font-size: 1rem;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+}
+.documents {
+  margin: 10px 10px 30px;
+}
+.documents,
+.documents ul {
+  list-style-type: none;
+}
+.documents > li .title {
+  margin: 15px 0;
+  padding-left: 8px;
+  border-left: 5px solid #d03c56;
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+.documents > li + li {
+  margin-top: 25px;
+}
+.documents > li ul {
+  margin: 15px;
+}
+.documents > li ul > li {
+  margin-bottom: 15px;
+  padding-left: 10px;
+  background: url(mcoding/standard-layout/images/arrow.gif) no-repeat left
+    center;
+}
+.documents a:hover {
+  text-decoration: underline;
+}
+.search-box {
+  width: 205px;
+  background-color: #ccc;
+  font-size: 0;
+}
+.searchbox > * {
+  font-size: 1.2rem;
+}
+.search-box .search-input {
+  width: 205px;
+  height: 26px;
+  padding: 0 10px;
+}
+.search-box .search-button {
+  width: 40px;
+  height: 26px;
+  border: none;
+  background-color: #d03c56;
+  color: #fff;
+  cursor: pointer;
+}
+.search-box .text {
+  margin-top: 12px;
+}
+
+/* フッター */
+.footer {
+  width: 100%;
+  padding: 20px 0 30px;
+  background: #2d3d54 url("mcoding/standard-layout/images/bg-footer.gif");
+  color: #fff;
+}
+.horizontal-list {
+  width: 970px;
+  margin: 0 auto;
+  text-align: right;
+  font-size: 0;
+}
+.horizontal-list .horizontal-item {
+  display: inline-block;
+  padding: 0 15px;
+  letter-spacing: 1px;
+}
+.horizontal-list .horizontal-item + .horizontal-item {
+  border-left: 1px solid #bbb;
+}
+.horizontal-list .horizontal-item a {
+  border-bottom: 1px dashed #777;
+  color: #bbb;
+  font-size: 1.1rem;
+  transition: color 0.15s;
+}
+.horizontal-list .horizontal-ltem a:hover {
+  color: #ddd;
+}
+.copyright {
+  margin-top: 30px;
+  text-align: center;
+  letter-spacing: 1px;
 }
