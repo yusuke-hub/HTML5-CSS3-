@@ -17,5 +17,6 @@ body {
   text-align: center;
   /* ブラウザのデフォルトは16pxなので10px相当 */
   font-size: 1.4rem;
-  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  /* 指定の順序は欧文フォント→日本語フォント/英数記号に欧文フォントを当てることができる */
+  font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
