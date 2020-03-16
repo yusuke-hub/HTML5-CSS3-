@@ -129,18 +129,21 @@ body {
   left: 0;
   width: 100%;
   height: 50%;
-  background: url(mcoding/singlepage-layout/images/tree.jpg) no-repeat;
+  background: no-repeat;
+
   background-size: 100% 100%;
   opacity: 0.2;
-  /* 拡大縮小を指定.-1で縦方向に反転 */
+  /* 景色が水面に投影されているかのような演出。拡大縮小を指定.-1で縦方向に反転 */
   transform: scaleY(-1);
 }
 .work-description {
   position: absolute;
   top: 50%;
   left: 0;
+  z-index: 1;
   width: 100%;
   height: 50%;
+  overflow-y: auto;
 }
 .work-description-inner {
   display: table;
@@ -158,4 +161,27 @@ body {
   width: 60%;
   margin-top: 20px;
   padding: 3px;
+}
+.button-gohst {
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.work-box.tree::after {
+  background-image: url(mcoding/singlepage-layout/images/tree.jpg);
+}
+.work-box.building::after {
+  background-image: url(mcoding/singlepage-layout/images/building.jpg);
+}
+.work-box.lake::after {
+  background-image: url(mcoding/singlepage-layout/images/lake.jpg);
+}
+.work-box.sky::after {
+  background-image: url(mcoding/singlepage-layout/images/sky.jpg);
+}
+.work-box:nth-child(odd) .work-image {
+  margin: 60% 0 0;
+}
+.work-box:nth-child(odd) .work-description,
+.work-box:nth-child(odd)::after {
+  top: 0;
 }
