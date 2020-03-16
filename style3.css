@@ -67,3 +67,30 @@ body {
 .button-showy {
   background-color: #f1b400;
 }
+.buttons .button {
+  margin: 10px;
+}
+.about {
+  padding: 80px 30px;
+  background-color: #fff;
+  color: #333;
+}
+.heading {
+  position: relative;
+  margin: 30px 0 15px;
+  letter-spacing: 2px;
+  font-size: 4rem;
+}
+/* .headingを基準に空白のコンテントを下に5pxずらす事で二重線を表現 */
+.heading::before,
+.heading::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #999;
+}
+.heading::before {
+  bottom: 5px;
+}
