@@ -101,3 +101,61 @@ body {
   margin: 30px 0;
   line-height: 2.5;
 }
+.works {
+  background-color: #383634;
+  padding: 80px 0;
+}
+.works-wrapper {
+  display: table;
+  width: 100%;
+  margin-top: 60px;
+  /* 子要素の横幅が異なる場合でも均等にすることができる */
+  table-layout: fixed;
+}
+.work-box {
+  display: table-cell;
+  position: relative;
+}
+.work-image {
+  display: block;
+  width: 100%;
+  /* marginとpaddingは%指定した時親要素の横幅を100%の基準にする */
+  margin: 0 0 60%;
+}
+.work-box::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: url(mcoding/singlepage-layout/images/tree.jpg) no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.2;
+  /* 拡大縮小を指定.-1で縦方向に反転 */
+  transform: scaleY(-1);
+}
+.work-description {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+.work-description-inner {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.work-text {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+.work-text .button {
+  width: 60%;
+  margin-top: 20px;
+  padding: 3px;
+}
