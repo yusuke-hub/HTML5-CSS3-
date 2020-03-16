@@ -20,3 +20,27 @@ body {
   /* 指定の順序は欧文フォント→日本語フォント/英数記号に欧文フォントを当てることができる */
   font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
+.header {
+  /* emmet区切りは-(ハイフン) */
+  padding: 170px 30px 80px;
+}
+.site-title-sub {
+  margin: 0 0 30px;
+  letter-spacing: 1px;
+  font-size: 2.2rem;
+}
+.site-title-sub::before,
+.site-title-sub::after {
+  content: "";
+  display: inline-block;
+  width: 140px;
+  height: 2px;
+  margin: 0 30px;
+  background-color: #fff;
+  /* 行の縦方向の揃え位置を指定 */
+  vertical-align: middle;
+}
+.site-title {
+  margin: 50px 0 40px;
+  font-size: 7.6rem;
+}
