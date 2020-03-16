@@ -44,3 +44,26 @@ body {
   margin: 50px 0 40px;
   font-size: 7.6rem;
 }
+.site-description {
+  margin-bottom: 50px;
+  color: #888;
+  font-size: 1.6rem;
+}
+.button {
+  display: inline-block;
+  width: 200px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #afa58d;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1.2rem;
+  font-size: 1.2rem;
+}
+.buttion:hover {
+  opacity: 0.9;
+}
+/* スタイルの指定は順番が早い程、優先度が高くなる */
+.button-showy {
+  background-color: #f1b400;
+}
