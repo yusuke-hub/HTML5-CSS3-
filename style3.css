@@ -75,9 +75,12 @@ body {
   background-color: #fff;
   color: #333;
 }
+/* 二重線を文字の範囲に限定するため,inline-block */
 .heading {
   position: relative;
+  display: inline-block;
   margin: 30px 0 15px;
+  padding-bottom: 15px;
   letter-spacing: 2px;
   font-size: 4rem;
 }
@@ -93,4 +96,8 @@ body {
 }
 .heading::before {
   bottom: 5px;
+}
+.about-text {
+  margin: 30px 0;
+  line-height: 2.5;
 }
