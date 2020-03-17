@@ -136,8 +136,8 @@ body {
   /* 景色が水面に投影されているかのような演出。拡大縮小を指定.-1で縦方向に反転 */
   transform: scaleY(-1);
 }
-.work-description {
-  position: absolute;
+position: absolute;
+  .work-description {
   top: 50%;
   left: 0;
   z-index: 1;
@@ -290,5 +290,20 @@ body {
     line-height: 1.8;
   }
   /* WORKS */
-  
+  .works-wrapper,
+  .work-box {
+    display: block;
+  }
+  .work-image {
+    display: none;
+  }
+  .work-description {
+    position: relative;
+  }
+  .work-box::after {
+    top: 0;
+    height: 100%;
+    background-size: cover;
+    transform: none;
+  }
 }
