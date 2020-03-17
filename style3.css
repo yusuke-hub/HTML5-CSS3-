@@ -256,9 +256,39 @@ body {
 .contact-form input[type="text"]:focus,
 .contact-form textarea:focus {
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
+  color: rgba(255, 255, 255, 0.6);
 }
-/* アイコンフォントとはいろいろなアイコンのイメージで構成されたフォント */
-/* ベクターファイル（画像データの表現形式の一つで、画像や図形を表す数値集合として表現したもの）なので
-拡大しても劣化しない */
-/* i要素の初期値はinlineだが、fontawsomeの指定によりinlineーblockとなっている */
-/* Ctrl Shift @ → ターミナル起動 */
+
+@media (max-width: 768px) {
+  /* ABOUT ME */
+  .site-title-sub::before,
+  .site-title-sub::after {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+  .site-title-sub {
+    font-size: 1.7rem;
+  }
+  .site-title {
+    margin-top: 35px;
+    font-size: 5rem;
+  }
+  .header {
+    padding-top: 60px;
+  }
+  .buttion:hover {
+    opacity: 1;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+  body {
+    font-size: 1.3rem;
+  }
+  .about-text {
+    line-height: 1.8;
+  }
+  /* WORKS */
+  
+}
